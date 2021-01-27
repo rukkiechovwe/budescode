@@ -1,0 +1,121 @@
+*,
+	*:after,
+	*:before {
+		box-sizing: border-box;
+	}
+body{
+	margin: 0;
+	padding: 0;
+	background-color:#f0ffef;
+	font-family: Avenir,Helvetica,Arial,sans-serif;
+}
+a{
+	text-decoration: none;
+}
+/*-------------------------ICONS-----------------------*/
+.fa{
+	color: #378c4e;
+}
+.login-page-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color:#f0ffef;
+}
+.login-img{
+	width:100px;
+	padding:10px;
+	margin-bottom:80px;
+}
+.login-img img{
+	width:100%;
+}
+.login-page{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #378c4e;
+    padding: 0px 10px 20px;
+}
+.login-page h2{
+	text-transform: uppercase;
+    color: #378c4e;
+}
+.login-page form{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-page form .container{
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #378c4e;
+    margin: 10px 0px 16px;
+    width: 100%;
+    border-radius: 7px;
+}
+.login-page form .container i{
+	padding: 0px 0px 0px 15px;
+	border-right:1px solid #378c4e;
+	padding: 12px 17px;
+}
+.login-page form .container input{
+	width: 100%;
+    color: #378c4e;
+    border: none;
+    background: transparent;
+    outline: none;
+    margin-left: 10px;
+}
+.login-page form .container input:focus{
+	border-radius:7px;
+	outline:none;
+}
+.login-page form .container1{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.login-page form .container1 button{
+	margin: 10px 0px 16px;
+    background: #378c4e;
+    padding: 12px 120px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: 0px 3px 5px 0px #969696;
+    text-transform: uppercase;
+    width: 100%;
+    font-weight:600;
+}
+.login-page form .container1 span{
+	font-size: 15px;
+    padding: 5px 0px 0px;
+}
+.login-page form .container1 span a{
+	color: #378c4e;
+	text-decoration: underline;
+}
+
+
+
+@media only screen and ( max-width: 1024px){
+	body{width: 100%}
+}
+@media only screen and (max-width: 350px){
+	  .login-page{margin: 0px 20px;}
+	  .login-page form .container1 button{padding: 12px 100px;}
+}
+@media only screen and (max-width: 310px){
+	.login-page form .container1 span{font-size: 13px;}
+	.login-page form .container1 button{padding: 12px 91px;}
+}
+@media only screen and (max-width: 290px){
+	.login-page form .container1 button{padding: 12px 70px;}
+}

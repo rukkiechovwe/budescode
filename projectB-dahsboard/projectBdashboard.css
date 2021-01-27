@@ -1,0 +1,126 @@
+*,
+	*:after,
+	*:before {
+		box-sizing: border-box;
+	}
+body{
+	margin: 0;
+	padding: 0;
+	background-color:#b8d4ba;
+	font-family:Roboto, Avenir,Helvetica,Arial,sans-serif;
+}
+a{
+	text-decoration: none;
+}
+/*-------------------------DASHBOARD-----------------------*/
+.list-container{
+	display: flex;
+	display: none; 
+	flex-direction: column;
+	margin-right: 20px;
+	font-weight:600;
+}
+.list-container a{
+	color: #fdfdfd;
+	font-size: 16px;
+	display: none; 
+	padding:20px 10px;
+	margin: 15px 0px;
+}
+.list-container a:hover{
+	background: #b8d4ba;;
+}
+#a1{
+	background: #b8d4ba;;
+}
+.sidenav{
+	display: none; 
+	background-color:#378c4e;
+	width:0px; 
+	height:100%;
+	position:absolute;
+	top: 68px; 
+	flex-direction: column;
+	padding: 20px 0px 20px;
+}
+.top{
+	display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.top .div1{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    background:#378c4e;
+}
+.top .div1 i{
+	font-size: 20px;
+}
+.top .div1 span{
+	font-size: 26px;
+	color: #fff;
+	font-weight: 600;
+}
+.top .div1 .nav{
+	margin-right: 30px;
+}
+.top .div1 .nav span{
+	font-size: 14px;
+	color: #378c4e;
+	font-weight: 100;
+	padding: 4px 11px;
+	background-color: #fff;
+	cursor: pointer;
+}
+.top .div1 .nav span:hover{
+	color: #378c4e;
+	background-color: #b8d4ba;
+}
+.dashboard{
+	display: flex;
+    flex-direction: column;
+    margin:0px 20px 20px;
+    color: #fff;
+}
+.dashboard .div2{
+	margin-top:30px;
+	display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: #fdfdfd;
+    border-left: 5px solid #378c4e;
+}
+.dashboard .div2 .header{
+	font-size: 18px;
+	color:#378c4e;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.dashboard .div2 span{
+	font-size: 15px;
+	color: #222;
+	font-weight: 100;
+	line-height: 20px;
+	word-spacing: 2px;
+}
+
+@media only screen and (max-width: 500px){
+	.top .div1{padding: 20px 5px;}
+	.top .div1 span{font-size: 24px;}
+	.top .div1 .nav{margin-right: 10px;}
+}
+@media only screen and (max-width: 360px){
+	.top .div1 span{font-size: 22px;}
+	.top .div1 i{margin-left:5px;}
+	.top .div1 .nav span{font-size: 12px;padding: 3px 7px;margin-left: 5px;}
+	.dashboard{margin:0px 10px 20px;}
+	.dashboard .div2{padding: 8px;}
+	.dashboard .div2 span{word-spacing: 0px;}
+}
+@media only screen and (max-width: 300px){
+	.top .div1 span{font-size: 20px;}
+	.top .div1{padding: 20px 0px;}
+}
